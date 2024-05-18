@@ -1,32 +1,21 @@
 # system requirement
-DELPHI is developed under Linux environment with python 3.5.
-Recommended RAM: > 24GB. The RAM requirement mainly depends on the length of the input sequence. 
+python 3.5.
 
 # installation
-1. clone the source code of DELPHI
+1. clone the source code
 ```
 mkdir -p Src && cd Src
-git clone [DELPHI git link]
+git clone 
 ```
-2. install python packages. Python virtual environment or conda is recommended for package management.
-
+2. install python packages.
 ``` 
-For GPU version:
 pip3 install -r requirement_gpu.txt
 ```
-
-```
-For CPU version: 
-pip3 install -r requirement_cpu.txt
-```
-
 3. install dependencies
-
 ```
 create a program directory
 mkdir -p ../programs && cd ../program
 ```
-
  - install [SPRINT](https://github.com/lucian-ilie/SPRINT)
  ```
  git clone https://github.com/lucian-ilie/SPRINT.git
@@ -50,8 +39,3 @@ mkdir -p ../programs && cd ../program
 ```
 ./run_DELPHI.sh [input_sequence]
 ```
-
-# DELPHI model architecture 
-![](img/Model_architecture.png)
-
-![](img/many_2_one.png)
